@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703155016"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703190322"
       integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/style.min.css?_v=20230703155016">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230703190322">
    <title>Головна</title>
 </head>
 
@@ -58,7 +58,7 @@
          <li><a class="sidebar__link" href="#">Сотрудники</a></li>
          <li><a class="sidebar__link" href="#">График работы</a></li>
          <li>
-            <a class="sidebar__link sidebar__arrow" href="#">О клинике</a>
+            <button class="sidebar__link sidebar__arrow">О клинике</button>
             <ul class="sidebar__sub-list">
                <li><a class="sidebar__sub-link" href="#">Наша миссия</a></li>
                <li><a class="sidebar__sub-link" href="#">Фотогалерея</a></li>
@@ -66,7 +66,7 @@
             </ul>
          </li>
          <li>
-            <a class="sidebar__link sidebar__arrow" href="#">Полезное</a>
+            <button class="sidebar__link sidebar__arrow">Полезное</button>
             <ul class="sidebar__sub-list">
                <li><a class="sidebar__sub-link" href="#">Истории пациентов</a></li>
                <li><a class="sidebar__sub-link" href="#">Статьи</a></li>
@@ -249,7 +249,7 @@
          </div>
          <div class="schedule__block">
             <div class="schedule__info">
-               <h4 class="schedule__sub-title">Круглосуточная работа</h4>
+               <h6 class="schedule__sub-title">Круглосуточная работа</h6>
                <p class="schedule__text">
                   Здесь говорим о режиме работы клиник и о консультации в любое время суток. И еще какой-то информативный текст, чтобы получилось в 3-5 строки.
                </p>
@@ -494,62 +494,56 @@
             <p class="history__date blog__date">21.06.2020</p>
           </div>
           <div class="blog-bottom__right">
-            <ul class="blog-bottom__list">
-              <a href="#">
-                <li class="blog-bottom__list-item">
-                  <div class="blog-bottom__article article-blog">
-                    <h3 class="article-blog__title">
-                      Большой животик. Что это может быть?
-                    </h3>
-                    <p class="article-blog__date">13.05.2020</p>
-                  </div>
-                </li>
+            <div class="blog-bottom__list">
+
+              <a href="#" class="blog-bottom__list-item">
+                <div class="blog-bottom__article article-blog">
+                  <h3 class="article-blog__title">
+                    Большой животик. Что это может быть?
+                  </h3>
+                  <p class="article-blog__date">13.05.2020</p>
+                </div>
               </a>
-              <a href="#"
-                ><li class="blog-bottom__list-item">
-                  <div class="blog-bottom__article article-blog">
-                    <h3 class="article-blog__title">
-                      Черепаховый окрас у кошек: чудо природы или генетическая
-                      мутация?
-                    </h3>
-                    <p class="article-blog__date">6.05.2020</p>
-                  </div>
-                </li>
+
+              <a href="#" class="blog-bottom__list-item">
+                <div class="blog-bottom__article article-blog">
+                  <h3 class="article-blog__title">
+                    Черепаховый окрас у кошек: чудо природы или генетическая мутация?
+                  </h3>
+                  <p class="article-blog__date">6.05.2020</p>
+                </div>
               </a>
-              <a href="#">
-                <li class="blog-bottom__list-item">
-                  <div class="blog-bottom__article article-blog">
-                    <h3 class="article-blog__title">
-                      Хроническая диарея или когда не прекращается понос
-                    </h3>
-                    <p class="article-blog__date">28.04.2020</p>
-                  </div>
-                </li>
+
+              <a href="#" class="blog-bottom__list-item">
+                <div class="blog-bottom__article article-blog">
+                  <h3 class="article-blog__title">
+                    Хроническая диарея или когда не прекращается понос
+                  </h3>
+                  <p class="article-blog__date">28.04.2020</p>
+                </div>
               </a>
-              <a href="#">
-                <li class="blog-bottom__list-item">
-                  <div class="blog-bottom__article article-blog">
-                    <h3 class="article-blog__title">
-                      Эзофагостома у собак и кошек — ответы на распространенные
-                      вопросы владельцев
-                    </h3>
-                    <p class="article-blog__date">20.04.2020</p>
-                  </div>
-                </li>
+
+              <a href="#" class="blog-bottom__list-item">
+                <div class="blog-bottom__article article-blog">
+                  <h3 class="article-blog__title">
+                    Эзофагостома у собак и кошек — ответы на распространенные вопросы владельцев
+                  </h3>
+                  <p class="article-blog__date">20.04.2020</p>
+                </div>
               </a>
-            </ul>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 				<section class="social">
   <div class="social__container">
     <div class="social__body">
       <h2 class="social__title">Мы в Инстаграм</h2>
-      <a href="#" class="social__link"><img src="img/index/social/instagram.png" alt="" class="social__instagram" /></a>
+      <a href="#" aria-label="Instagram" class="social__link"><img src="img/index/social/instagram.png" alt="" class="social__instagram" /></a>
     </div>
     <img src="img/index/social/social-cat.png" alt="" class="social__cat" />
     <img class="social__heart social__heart--one" src="img/index/social/heart.svg" alt="" />
@@ -563,7 +557,7 @@
     <div class="adress__body">
       <h2 class="adress__title">Две современные клиники в Москве</h2>
       <div class="adress__bottom">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2542.520083675568!2d30.628478!3d50.412781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5083e560de1%3A0xbab7545eb25418af!2z0JLQtdGC0LXRgNC40L3QsNGA0L3QsCDQutC70ZbQvdGW0LrQsCBTdXBlclZldA!5e0!3m2!1suk!2sua!4v1688192683995!5m2!1suk!2sua" width="728" height="536" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2542.520083675568!2d30.628478!3d50.412781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5083e560de1%3A0xbab7545eb25418af!2z0JLQtdGC0LXRgNC40L3QsNGA0L3QsCDQutC70ZbQvdGW0LrQsCBTdXBlclZldA!5e0!3m2!1suk!2sua!4v1688192683995!5m2!1suk!2sua" width="728" height="536" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="adress__bottom-info">
           <h3 class="adress__bottom-title">+7 (499) 110-23-03</h3>
           <p class="adress__bottom-subtitle">Единый круглосуточный номер</p>
@@ -627,7 +621,7 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230703155016" defer></script>
+	<script src="js/app.min.js?_v=20230703190322" defer></script>
 </body>
 
 </html>

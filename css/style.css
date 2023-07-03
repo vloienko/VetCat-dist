@@ -1510,6 +1510,7 @@ body {
 }
 
 .sidebar__arrow {
+  background-color: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding-right: 24px;
