@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703155016"
+      integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20230703155016">
+   <title>Головна</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+   <div class="header__container">
+      <div class="header__body">
+         <div class="header__logo">
+            <img class="header__logo-image" src="img/logo/cat.png" alt="Logo">
+            <div class="header__logo-box">
+               <img class="header__logo-name" src="img/logo/name.svg" alt="Name clinic">
+               <img class="header__logo-text" src="img/logo/text.svg" alt="Text clinic">
+            </div>
+         </div>
+         <div class="header__searsh">
+            <label for="header-search">
+               <img src="img/icon-svg/search.svg" alt="Search icon">
+            </label>
+            <input type="text" id="header-search" placeholder="Поиск по сайту">
+         </div>
+         <div class="menu__icon">
+            <span></span>
+         </div>
+         <div class="header__address">
+            <div class="header__box">
+               <span class="header__street">Одесса, Чкалова д. 57/5</span>
+               <span class="header__area">Приморский район</span>
+            </div>
+            <div class="header__box">
+               <span class="header__street">Одесса, Заболотного д.21/1</span>
+               <span class="header__area">Суворовский район</span>
+            </div>
+         </div>
+         <div class="header__contact">
+            <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
+            <button type="button" class="header__order-call">Заказать звонок</button>
+         </div>
+      </div>
+   </div>
+</header>
+		<div class="sidebar-container">
+			<aside class="sidebar">
+   <nav class="sidebar__menu">
+      <ul class="sidebar__list">
+         <li><a class="sidebar__link" href="#">Наши услуги</a></li>
+         <li><a class="sidebar__link" href="#">Стоимость</a></li>
+         <li><a class="sidebar__link" href="#">Сотрудники</a></li>
+         <li><a class="sidebar__link" href="#">График работы</a></li>
+         <li>
+            <a class="sidebar__link sidebar__arrow" href="#">О клинике</a>
+            <ul class="sidebar__sub-list">
+               <li><a class="sidebar__sub-link" href="#">Наша миссия</a></li>
+               <li><a class="sidebar__sub-link" href="#">Фотогалерея</a></li>
+               <li><a class="sidebar__sub-link" href="#">Отзывы</a></li>
+            </ul>
+         </li>
+         <li>
+            <a class="sidebar__link sidebar__arrow" href="#">Полезное</a>
+            <ul class="sidebar__sub-list">
+               <li><a class="sidebar__sub-link" href="#">Истории пациентов</a></li>
+               <li><a class="sidebar__sub-link" href="#">Статьи</a></li>
+            </ul>
+         </li>
+         <li><a class="sidebar__link" href="#">Контакты</a></li>
+      </ul>
+      <div class="header__contact header__contact--sidebar">
+         <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
+         <button type="button" class="header__order-call">Заказать звонок</button>
+      </div>
+   </nav>
+
+   <div class="sidebar__block">
+      <div class="sidebar__box">
+         <div class="sidebar__holder">
+            <h4 class="sidebar__slogan">Работаем для вас</h4>
+            <p class="sidebar__text">ежедневно и круглосуточно</p>
+         </div>
+         <a class="sidebar__button" href="#">Записаться на прием</a>
+      </div>
+   </div>
+</aside>
+			<main class="main">
+				<section class="vet-center">
+   <div class="container">
+      <div class="vet-center__body">
+         <h1 class="vet-center__title">Ветеринарный центр, на который вы можете рассчитывать 24/7</h1>
+         <ul class="vet-center__list">
+            <li class="vet-center__item">Придерживаемся принципов доказательной медицины</li>
+            <li class="vet-center__item">Врач никогда не пытается применить ко всем единую методику</li>
+            <li class="vet-center__item">Каждый случай уникален</li>
+         </ul>
+      </div>
+      <a class="vet-center__arrow" href="#pet-service">
+         <img src="img/icon-svg/vet-center-arrow.svg" alt="Button arrow">
+      </a>
+   </div>
+</section>
+				<section class="pet-service" id="pet-service">
+   <div class="container">
+      <div class="pet-service__body">
+         <h2 class="pet-service__title h2-title">Популярные услуги для ваших питомцев</h2>
+         <div class="pet-service__box">
+            <a class="pet-service__button btn btn_outer" href="#">Смотреть все цены</a>
+            <a class="pet-service__button btn btn_green" href="#">Смотреть все услуги</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="swiper-container">
+      <div class='pet-service__swiper swiper'>
+         <div class='pet-service__wrapper swiper-wrapper'>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Терапия
+	</div>
+	<div class="serviceCard__descr">
+		Первичная диагностика и симптоматическое лечение, консультации по содержанию и кормлению домашних животных.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Хирургия
+	</div>
+	<div class="serviceCard__descr">
+		Проведение широкого спектра хирургических операций различной сложности под контролем опытных ветеринаров.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Дерматология
+	</div>
+	<div class="serviceCard__descr">
+		Диагностика и лечение кожных заболеваний. Забор анализов и обследование на современном оборудовании.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Терапия
+	</div>
+	<div class="serviceCard__descr">
+		Первичная диагностика и симптоматическое лечение, консультации по содержанию и кормлению домашних животных.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Хирургия
+	</div>
+	<div class="serviceCard__descr">
+		Проведение широкого спектра хирургических операций различной сложности под контролем опытных ветеринаров.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+            <div class='pet-service__slide swiper-slide'>
+               <div class="serviceCard">
+	<div class="serviceCard__title">
+		Дерматология
+	</div>
+	<div class="serviceCard__descr">
+		Диагностика и лечение кожных заболеваний. Забор анализов и обследование на современном оборудовании.
+	</div>
+	<div class="serviceCard__more">
+		Подробнее
+		<svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-1.74845e-07 5L17 5M17 5C15.3146 3.85714 12.7865 1 12.7865 1M17 5C15.3146 6.14286 12.7865 9 12.7865 9"
+				stroke="white" stroke-width="2" />
+		</svg>
+	</div>
+</div>
+            </div>
+         </div>
+         
+         <svg class='pet-service-prev swiper-button-prev arrow-btn-swiper' width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 27.0001C16.7416 26.3292 16.7416 26.3291 16.7415 26.329L16.7411 26.3286L16.7398 26.3271L16.7348 26.3217L16.7159 26.3009L16.643 26.2208C16.5791 26.1508 16.485 26.048 16.3636 25.9162C16.1207 25.6526 15.7682 25.2726 15.3278 24.8053C14.4475 23.8711 13.2148 22.5862 11.8053 21.184C9.37627 18.7673 6.37578 15.9547 3.73673 14.0001C6.37577 12.0454 9.37627 9.23279 11.8053 6.81611C13.2148 5.41386 14.4475 4.12906 15.3278 3.19479C15.7682 2.7275 16.1207 2.34751 16.3636 2.08391C16.485 1.9521 16.5791 1.84935 16.643 1.77932L16.7159 1.69923L16.7348 1.67843L16.7398 1.67299L16.7411 1.67153L16.7415 1.67111C16.7416 1.67099 16.7416 1.67091 16 1.00006L15.2584 0.329212L15.2582 0.329434L15.2573 0.330509L15.253 0.335171L15.2356 0.354382L15.1657 0.431175C15.1038 0.498972 15.0119 0.599358 14.8927 0.728705C14.6544 0.987421 14.3069 1.3619 13.8723 1.82318C13.0026 2.74605 11.7853 4.01482 10.3947 5.39829C7.59591 8.18285 4.15696 11.3695 1.44731 13.1667L0.190863 14.0001L1.44731 14.8334C4.15696 16.6306 7.59591 19.8173 10.3947 22.6018C11.7853 23.9853 13.0026 25.2541 13.8723 26.1769C14.3069 26.6382 14.6544 27.0127 14.8927 27.2714C15.0119 27.4008 15.1038 27.5011 15.1657 27.5689L15.2356 27.6457L15.2531 27.6649L15.2573 27.6696L15.2582 27.6707L15.2584 27.6709L16 27.0001Z"/>
+         </svg>
+         <svg class='pet-service-next swiper-button-next arrow-btn-swiper' width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 27.0001C16.7416 26.3292 16.7416 26.3291 16.7415 26.329L16.7411 26.3286L16.7398 26.3271L16.7348 26.3217L16.7159 26.3009L16.643 26.2208C16.5791 26.1508 16.485 26.048 16.3636 25.9162C16.1207 25.6526 15.7682 25.2726 15.3278 24.8053C14.4475 23.8711 13.2148 22.5862 11.8053 21.184C9.37627 18.7673 6.37578 15.9547 3.73673 14.0001C6.37577 12.0454 9.37627 9.23279 11.8053 6.81611C13.2148 5.41386 14.4475 4.12906 15.3278 3.19479C15.7682 2.7275 16.1207 2.34751 16.3636 2.08391C16.485 1.9521 16.5791 1.84935 16.643 1.77932L16.7159 1.69923L16.7348 1.67843L16.7398 1.67299L16.7411 1.67153L16.7415 1.67111C16.7416 1.67099 16.7416 1.67091 16 1.00006L15.2584 0.329212L15.2582 0.329434L15.2573 0.330509L15.253 0.335171L15.2356 0.354382L15.1657 0.431175C15.1038 0.498972 15.0119 0.599358 14.8927 0.728705C14.6544 0.987421 14.3069 1.3619 13.8723 1.82318C13.0026 2.74605 11.7853 4.01482 10.3947 5.39829C7.59591 8.18285 4.15696 11.3695 1.44731 13.1667L0.190863 14.0001L1.44731 14.8334C4.15696 16.6306 7.59591 19.8173 10.3947 22.6018C11.7853 23.9853 13.0026 25.2541 13.8723 26.1769C14.3069 26.6382 14.6544 27.0127 14.8927 27.2714C15.0119 27.4008 15.1038 27.5011 15.1657 27.5689L15.2356 27.6457L15.2531 27.6649L15.2573 27.6696L15.2582 27.6707L15.2584 27.6709L16 27.0001Z"/>
+         </svg>
+      </div>
+   </div>
+</section>
+
+
+				<section class="schedule">
+   <div class="container">
+      <h2 class="schedule__title h2-title">ВетКэт — это</h2>
+   </div>
+   <div class="schedule__container">
+      <div class="schedule__body">
+         <div class="schedule__buttons">
+            <button type="button" class="schedule__btn">1</button>
+            <button type="button" class="schedule__btn active">2</button>
+            <button type="button" class="schedule__btn">3</button>
+            <button type="button" class="schedule__btn">4</button>
+         </div>
+         <div class="schedule__block">
+            <div class="schedule__info">
+               <h4 class="schedule__sub-title">Круглосуточная работа</h4>
+               <p class="schedule__text">
+                  Здесь говорим о режиме работы клиник и о консультации в любое время суток. И еще какой-то информативный текст, чтобы получилось в 3-5 строки.
+               </p>
+               <a class="schedule__link btn btn_green" href="#">Подробнее о компании</a>
+            </div>
+            <div class="schedule__content">
+               <div class="schedule__wrap">
+                  <img class="schedule__image" src="img/index/shedule-doctor.png" alt="Image">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+				<section class="index-spec">
+   <div class="container">
+      <div class="index-spec__body">
+         <h2 class="index-spec__title h2-title">Наши специалисты отвечают на любые вопросы</h2>
+         <a class="index-spec__button btn btn_green" href="#">График работы врачей</a>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="specialist__slider">
+	<div class="swiper specialist__swiper">
+		<div class="swiper-wrapper specialist__swiper-wrapper">
+			<div class="swiper-slide specialist__slide">
+				<div class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor1.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Ярославская <br> Екатерина Ивановна
+		</div>
+		<div class="specialistCard__job">
+			Заведующая ветеринарным центром
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="swiper-slide specialist__slide">
+				<div class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor2.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Малицкая <br /> Валерия Викторовна
+		</div>
+		<div class="specialistCard__job">
+			Главный ветеринарный врач
+		</div>
+	</div>
+</div>
+			</div>
+			<div class="swiper-slide specialist__slide">
+				<div class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor3.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Савченко <br> Екатерина Сергеевна
+		</div>
+		<div class="specialistCard__job">
+			Ветеринарный врач
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-button-prev specialist__swiper-prev">
+		<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M22 29.0001C22.7416 28.3292 22.7416 28.3291 22.7415 28.329L22.7411 28.3286L22.7398 28.3271L22.7348 28.3217L22.7159 28.3009L22.643 28.2208C22.5791 28.1508 22.485 28.048 22.3636 27.9162C22.1207 27.6526 21.7682 27.2726 21.3278 26.8053C20.4475 25.8711 19.2148 24.5862 17.8053 23.184C15.3763 20.7673 12.3758 17.9547 9.73674 16.0001C12.3758 14.0454 15.3763 11.2328 17.8053 8.81611C19.2148 7.41386 20.4475 6.12906 21.3278 5.19479C21.7682 4.7275 22.1207 4.34751 22.3636 4.08391C22.4851 3.9521 22.5791 3.84935 22.643 3.77932L22.7159 3.69923L22.7348 3.67843L22.7398 3.67299L22.7411 3.67153L22.7415 3.67111C22.7416 3.67099 22.7416 3.67091 22 3.00006L21.2584 2.32921L21.2582 2.32943L21.2573 2.33051L21.2531 2.33517L21.2356 2.35438L21.1657 2.43118C21.1038 2.49897 21.0119 2.59936 20.8927 2.7287C20.6544 2.98742 20.3069 3.3619 19.8723 3.82318C19.0026 4.74605 17.7853 6.01482 16.3948 7.39829C13.5959 10.1828 10.157 13.3695 7.44731 15.1667L6.19087 16.0001L7.44731 16.8334C10.157 18.6306 13.5959 21.8173 16.3948 24.6018C17.7853 25.9853 19.0026 27.2541 19.8723 28.1769C20.3069 28.6382 20.6544 29.0127 20.8927 29.2714C21.0119 29.4008 21.1038 29.5011 21.1657 29.5689L21.2356 29.6457L21.2531 29.6649L21.2573 29.6696L21.2582 29.6707L21.2584 29.6709L22 29.0001Z" />
+		</svg>
+	</div>
+	<div class="swiper-button-next specialist__swiper-next">
+		<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M9.99995 2.99995C9.25836 3.6708 9.25844 3.67088 9.25855 3.671L9.25892 3.67142L9.26025 3.67288L9.26518 3.67832L9.28406 3.69912L9.35699 3.77921C9.4209 3.84924 9.51495 3.95198 9.6364 4.0838C9.87928 4.3474 10.2318 4.72739 10.6722 5.19467C11.5525 6.12895 12.7852 7.41375 14.1947 8.816C16.6237 11.2327 19.6242 14.0453 22.2633 15.9999C19.6242 17.9546 16.6237 20.7672 14.1947 23.1839C12.7852 24.5861 11.5525 25.8709 10.6722 26.8052C10.2318 27.2725 9.87928 27.6525 9.6364 27.9161C9.51495 28.0479 9.4209 28.1506 9.35699 28.2207L9.28406 28.3008L9.26518 28.3216L9.26025 28.327L9.25892 28.3285L9.25855 28.3289C9.25844 28.329 9.25836 28.3291 9.99995 28.9999L10.7416 29.6708L10.7418 29.6706L10.7427 29.6695L10.7469 29.6648L10.7644 29.6456L10.8343 29.5688C10.8962 29.501 10.9881 29.4006 11.1073 29.2713C11.3456 29.0126 11.6931 28.6381 12.1277 28.1768C12.9974 27.2539 14.2147 25.9852 15.6053 24.6017C18.4041 21.8172 21.843 18.6305 24.5527 16.8333L25.8091 15.9999L24.5527 15.1666C21.843 13.3694 18.4041 10.1827 15.6053 7.39817C14.2147 6.01471 12.9974 4.74594 12.1277 3.82307C11.6931 3.36179 11.3456 2.98731 11.1073 2.72859C10.9881 2.59925 10.8962 2.49886 10.8343 2.43106L10.7644 2.35427L10.7469 2.33506L10.7427 2.3304L10.7418 2.32932L10.7416 2.3291L9.99995 2.99995Z" />
+		</svg>
+	</div>
+</div>
+   </div>
+</section>
+				<section class="history">
+  <div class="container">
+    <div class="history__body">
+      <div class="history__top specialist__top">
+        <h2 class="specialist__title history__title h2-title">
+          Истории больших и маленьких пациентов, которым мы помогли
+        </h2>
+        <a href="#" class="history__link btn btn_green">Читать все истории</a>
+      </div>
+      <div class="specialist__bottom">
+        <div class="swiper history__swiper">
+          <div class="swiper-wrapper history__wrapper">
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets1.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Непростое лечение перелома нижней челюсти у кошки Маруськи
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets2.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Отравление немытым виноградом у пекинеса Гремлина
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets3.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Патологические роды и кесарево сечение у крысы Анфисы
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets9.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Острый панкреатит у йоркширского терьера Луи II Саксонского 21.06.2020
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets1.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Непростое лечение перелома нижней челюсти у кошки Маруськи
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide history__slide">
+              <div class="history__card">
+                <div class="history__card-top">
+                  <img src="img/pets/pets1.jpg" alt="" />
+                </div>
+                <div class="history__card-bottom">
+                  <h3 class="history__card-title">
+                    Непростое лечение перелома нижней челюсти у кошки Маруськи
+                  </h3>
+                  <p class="history__date">21.06.2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="history__button-prev button-prev arrow-btn-swiper swiper-button-prev" width="17" height="28" viewBox="0 0 17 28"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16 27.0001C16.7416 26.3292 16.7416 26.3291 16.7415 26.329L16.7411 26.3286L16.7398 26.3271L16.7348 26.3217L16.7159 26.3009L16.643 26.2208C16.5791 26.1508 16.485 26.048 16.3636 25.9162C16.1207 25.6526 15.7682 25.2726 15.3278 24.8053C14.4475 23.8711 13.2148 22.5862 11.8053 21.184C9.37627 18.7673 6.37578 15.9547 3.73673 14.0001C6.37577 12.0454 9.37627 9.23279 11.8053 6.81611C13.2148 5.41386 14.4475 4.12906 15.3278 3.19479C15.7682 2.7275 16.1207 2.34751 16.3636 2.08391C16.485 1.9521 16.5791 1.84935 16.643 1.77932L16.7159 1.69923L16.7348 1.67843L16.7398 1.67299L16.7411 1.67153L16.7415 1.67111C16.7416 1.67099 16.7416 1.67091 16 1.00006L15.2584 0.329212L15.2582 0.329434L15.2573 0.330509L15.253 0.335171L15.2356 0.354382L15.1657 0.431175C15.1038 0.498972 15.0119 0.599358 14.8927 0.728705C14.6544 0.987421 14.3069 1.3619 13.8723 1.82318C13.0026 2.74605 11.7853 4.01482 10.3947 5.39829C7.59591 8.18285 4.15696 11.3695 1.44731 13.1667L0.190863 14.0001L1.44731 14.8334C4.15696 16.6306 7.59591 19.8173 10.3947 22.6018C11.7853 23.9853 13.0026 25.2541 13.8723 26.1769C14.3069 26.6382 14.6544 27.0127 14.8927 27.2714C15.0119 27.4008 15.1038 27.5011 15.1657 27.5689L15.2356 27.6457L15.2531 27.6649L15.2573 27.6696L15.2582 27.6707L15.2584 27.6709L16 27.0001Z" />
+        </svg>
+        <svg class="history__button-next button-next arrow-btn-swiper swiper-button-next" width="17" height="28" viewBox="0 0 17 28"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16 27.0001C16.7416 26.3292 16.7416 26.3291 16.7415 26.329L16.7411 26.3286L16.7398 26.3271L16.7348 26.3217L16.7159 26.3009L16.643 26.2208C16.5791 26.1508 16.485 26.048 16.3636 25.9162C16.1207 25.6526 15.7682 25.2726 15.3278 24.8053C14.4475 23.8711 13.2148 22.5862 11.8053 21.184C9.37627 18.7673 6.37578 15.9547 3.73673 14.0001C6.37577 12.0454 9.37627 9.23279 11.8053 6.81611C13.2148 5.41386 14.4475 4.12906 15.3278 3.19479C15.7682 2.7275 16.1207 2.34751 16.3636 2.08391C16.485 1.9521 16.5791 1.84935 16.643 1.77932L16.7159 1.69923L16.7348 1.67843L16.7398 1.67299L16.7411 1.67153L16.7415 1.67111C16.7416 1.67099 16.7416 1.67091 16 1.00006L15.2584 0.329212L15.2582 0.329434L15.2573 0.330509L15.253 0.335171L15.2356 0.354382L15.1657 0.431175C15.1038 0.498972 15.0119 0.599358 14.8927 0.728705C14.6544 0.987421 14.3069 1.3619 13.8723 1.82318C13.0026 2.74605 11.7853 4.01482 10.3947 5.39829C7.59591 8.18285 4.15696 11.3695 1.44731 13.1667L0.190863 14.0001L1.44731 14.8334C4.15696 16.6306 7.59591 19.8173 10.3947 22.6018C11.7853 23.9853 13.0026 25.2541 13.8723 26.1769C14.3069 26.6382 14.6544 27.0127 14.8927 27.2714C15.0119 27.4008 15.1038 27.5011 15.1657 27.5689L15.2356 27.6457L15.2531 27.6649L15.2573 27.6696L15.2582 27.6707L15.2584 27.6709L16 27.0001Z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <img src="img/index/big-cat.png" alt="" class="history__big-cat">
+</section>
+				<section class="blog">
+  <div class="container">
+    <div class="blog__body">
+      <div class="specialist__top">
+        <h2 class="specialist__title blog__title h2-title">
+          Блог с усами, лапами, хвостом и свежие новости клиники
+        </h2>
+        <a href="#" class="blog-link btn btn_green">Смотреть все статьи</a>
+      </div>
+      <div class="specialist__bottom blog-bottom">
+        <div class="blog-bottom__wrapper">
+          <div class="blog-bottom__left">
+            <img class="blog-bottom__img" src="img/index/blog-dog.jpg" alt="" />
+            <h3 class="history__card-title blog-bottom__title">
+              Обзор заболеваний некастрированных кобелей породы янокуисосто
+            </h3>
+            <p class="history__date blog__date">21.06.2020</p>
+          </div>
+          <div class="blog-bottom__right">
+            <ul class="blog-bottom__list">
+              <a href="#">
+                <li class="blog-bottom__list-item">
+                  <div class="blog-bottom__article article-blog">
+                    <h3 class="article-blog__title">
+                      Большой животик. Что это может быть?
+                    </h3>
+                    <p class="article-blog__date">13.05.2020</p>
+                  </div>
+                </li>
+              </a>
+              <a href="#"
+                ><li class="blog-bottom__list-item">
+                  <div class="blog-bottom__article article-blog">
+                    <h3 class="article-blog__title">
+                      Черепаховый окрас у кошек: чудо природы или генетическая
+                      мутация?
+                    </h3>
+                    <p class="article-blog__date">6.05.2020</p>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li class="blog-bottom__list-item">
+                  <div class="blog-bottom__article article-blog">
+                    <h3 class="article-blog__title">
+                      Хроническая диарея или когда не прекращается понос
+                    </h3>
+                    <p class="article-blog__date">28.04.2020</p>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li class="blog-bottom__list-item">
+                  <div class="blog-bottom__article article-blog">
+                    <h3 class="article-blog__title">
+                      Эзофагостома у собак и кошек — ответы на распространенные
+                      вопросы владельцев
+                    </h3>
+                    <p class="article-blog__date">20.04.2020</p>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+				<section class="social">
+  <div class="social__container">
+    <div class="social__body">
+      <h2 class="social__title">Мы в Инстаграм</h2>
+      <a href="#" class="social__link"><img src="img/index/social/instagram.png" alt="" class="social__instagram" /></a>
+    </div>
+    <img src="img/index/social/social-cat.png" alt="" class="social__cat" />
+    <img class="social__heart social__heart--one" src="img/index/social/heart.svg" alt="" />
+    <img class="social__heart social__heart--two" src="img/index/social/heart.svg" alt="" />
+    <img class="social__heart social__heart--three" src="img/index/social/heart.svg" alt="" />
+    <img class="social__heart social__heart--four" src="img/index/social/heart.svg" alt="" />
+  </div>
+</section>
+				<section class="adress">
+  <div class="container">
+    <div class="adress__body">
+      <h2 class="adress__title">Две современные клиники в Москве</h2>
+      <div class="adress__bottom">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2542.520083675568!2d30.628478!3d50.412781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5083e560de1%3A0xbab7545eb25418af!2z0JLQtdGC0LXRgNC40L3QsNGA0L3QsCDQutC70ZbQvdGW0LrQsCBTdXBlclZldA!5e0!3m2!1suk!2sua!4v1688192683995!5m2!1suk!2sua" width="728" height="536" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="adress__bottom-info">
+          <h3 class="adress__bottom-title">+7 (499) 110-23-03</h3>
+          <p class="adress__bottom-subtitle">Единый круглосуточный номер</p>
+          <div class="adress__bottom-cards">
+            <div class="adress__bottom-card">
+              <h4 class="adress__bottom-card-title">Кулакова, 10 корпус 1</h4>
+              <p class="adress__bottom-card-subtitle">
+                Район Строгино <br> м. Строгино, Мякинино
+              </p>
+              <img src="./images/adress/1.png" alt="" class="adress__bottom-img" />
+            </div>
+            <div class="adress__bottom-card">
+              <h4 class="adress__bottom-card-title">
+                Загородное ш., 4 корпус 2
+              </h4>
+              <p class="adress__bottom-card-subtitle">
+                Донской район <br> м. Крымская, Верхние Котлы
+              </p>
+              <img src="./images/adress/2.png" alt="" class="adress__bottom-img" />
+            </div>
+          </div>
+          <a href="#" class="adress__link btn btn_green">Подробнее о клиниках</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+				
+				<footer class="footer">
+   <div class="container">
+      <div class="footer__body">
+         <div class="footer__info">
+            <div class="footer__social">
+               <h2 class="footer__title">
+                  Подпишитесь, чтобы быть в курсе всех акций и новостей
+               </h2>
+               <div class="footer__link">
+                  <img src="img/icon-svg/insta.svg" alt="instagram" class="footer__img" />
+                  <a href="#" class="footer__instagram">vetket.clinic</a>
+               </div>
+            </div>
+            <div class="footer__text">
+               Обращаем Ваше внимание на то, что данный интернет-сайт носит
+               исключительно информационный характер и не является публичной офертой,
+               определяемой положениями ч.2 ст.37 Гражданского кодекса Украины. Для
+               получения подробной информации о стоимости и сроках выполнения услуг,
+               пожалуйста, обращайтесь к сотрудникам ветеринарного центра «ВетКэт».
+            </div>
+         </div>
+         <div class="footer__copyright">
+            <div class="footer__copyright-left">
+               <p class="footer__copyright-text">© Ветеринарный центр «ВетКэт». Все права защищены. 2020</p>
+            </div>
+            <div class="footer__copyright-right">
+               <a href="#" class="footer__copyright-politic">Политика конфиденциальности</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+			</main>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230703155016" defer></script>
+</body>
+
+</html>
