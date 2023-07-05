@@ -3012,14 +3012,6 @@ body {
   gap: 8px;
 }
 
-.cost-services__tabs button {
-  display: none;
-}
-
-.cost-services__tabs button.cost-services__button {
-  display: block;
-}
-
 .cost-services__input {
   margin-top: 3px;
   display: inline-block;
