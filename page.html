@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703192020"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230705161318"
       integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/style.min.css?_v=20230703192020">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230705161318">
    <title>Головна</title>
 </head>
 
@@ -16,13 +16,13 @@
 		<header class="header">
    <div class="header__container">
       <div class="header__body">
-         <div class="header__logo">
+         <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logo/cat.png" alt="Logo">
             <div class="header__logo-box">
                <img class="header__logo-name" src="img/logo/name.svg" alt="Name clinic">
                <img class="header__logo-text" src="img/logo/text.svg" alt="Text clinic">
             </div>
-         </div>
+         </a>
          <div class="header__searsh">
             <label for="header-search">
                <img src="img/icon-svg/search.svg" alt="Search icon">
@@ -53,26 +53,26 @@
 			<aside class="sidebar">
    <nav class="sidebar__menu">
       <ul class="sidebar__list">
-         <li><a class="sidebar__link" href="#">Наши услуги</a></li>
-         <li><a class="sidebar__link" href="#">Стоимость</a></li>
-         <li><a class="sidebar__link" href="#">Сотрудники</a></li>
-         <li><a class="sidebar__link" href="#">График работы</a></li>
+         <li><a class="sidebar__link" href="all-services.html">Наши услуги</a></li>
+         <li><a class="sidebar__link" href="cost-services.html">Стоимость</a></li>
+         <li><a class="sidebar__link" href="all-specialist.html">Сотрудники</a></li>
+         <li><a class="sidebar__link" href="timetable.html">График работы</a></li>
          <li>
             <button class="sidebar__link sidebar__arrow">О клинике</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Наша миссия</a></li>
-               <li><a class="sidebar__sub-link" href="#">Фотогалерея</a></li>
-               <li><a class="sidebar__sub-link" href="#">Отзывы</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="0">Наша миссия</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="1">Фотогалерея</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="2">Отзывы</a></li>
             </ul>
          </li>
          <li>
             <button class="sidebar__link sidebar__arrow">Полезное</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Истории пациентов</a></li>
-               <li><a class="sidebar__sub-link" href="#">Статьи</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="0">Истории пациентов</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="1">Статьи</a></li>
             </ul>
          </li>
-         <li><a class="sidebar__link" href="#">Контакты</a></li>
+         <li><a class="sidebar__link" href="contacts.html">Контакты</a></li>
       </ul>
       <div class="header__contact header__contact--sidebar">
          <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
@@ -86,13 +86,13 @@
             <h4 class="sidebar__slogan">Работаем для вас</h4>
             <p class="sidebar__text">ежедневно и круглосуточно</p>
          </div>
-         <a class="sidebar__button" href="#">Записаться на прием</a>
+         <div class="sidebar__button btn_red btn_reception">Записаться на прием</div>
       </div>
    </div>
 </aside>
 			<main class="main">
 
-				<div class="search">
+				<div class="all-specialist">
 	<div class="container">
 		<div class="path">
 			<a href="index.html" class="path__main">
@@ -106,45 +106,258 @@
 				</svg>
 			</div>
 			<div class="path__this">
-				Поиск
+				Сотрудники
 			</div>
 		</div>
-		<div class="search__title">
-			Результаты поиска
+		<div class="all-specialist__title">
+			Наши специалисты
 		</div>
-		<div class="search__form">
-			<input type="text" class="search__input"></input>
-			<div class="search__btn btn btn_green">Найти</div>
+		<div class="all-specialist__wrapper">
+			<div class="all-specialist__subtitle">У нас работают более 20 ветеринарных врачей,
+				среди которых 3 кандидата наук.</div>
+			<div class="all-specialist__toggle toggle">
+				<div class="toggle__item toggle__item_active">Везде</div>
+				<div class="toggle__item">Строгино</div>
+				<div class="toggle__item">Донской</div>
+			</div>
 		</div>
-		<div class="search__result">Найдено: 18</div>
-		<div class="search__list">
-			<div class="search__item">
-				<div class="search__tag">Сотрудники</div>
-				<div class="search__type">Терапия</div>
-				<div class="search__text"><!-- <span>Терапия</span> | Ветеринарный центр «ВетКэт» <span>Терапия</span> Записывайтесь
-					на прием к врачам <span>терапевтам</span> --></div>
+		<div class="all-specialist__select">
+			<div class="all-specialist__selected">
+				Все специализации
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19 8C19 8 14 13 12 16C10 13 5 8 5 8" stroke="#292D33" stroke-width="2" />
+				</svg>
+
 			</div>
-			<div class="search__item">
-				<div class="search__tag">Услуги</div>
-				<div class="search__type">Терапия</div>
-				<div class="search__text"><!-- <span>Терапия</span> — процесс, осуществляемый с целью облегчения, снятия или
-					устранения симптомов и проявлений того или иного заболевания. Ветеринарный <span>терапевт</span> — это врач
-					общей практики. Как правило именно с <span>терапевта</span> начинается первичный прием. Он произведет... -->
-				</div>
+			<div class="all-specialist__list">
+				<div class="all-specialist__list-item all-specialist__list-item_active">Все специализации</div>
+				<div class="all-specialist__list-item">Анестезиология</div>
+				<div class="all-specialist__list-item">Гастроэнтерология</div>
+				<div class="all-specialist__list-item">Дерматология</div>
+				<div class="all-specialist__list-item">Кардиология</div>
+				<div class="all-specialist__list-item">Лабораторная диагностика</div>
+				<div class="all-specialist__list-item">Нефрология</div>
+				<div class="all-specialist__list-item">Онкология</div>
+				<div class="all-specialist__list-item">Ортопедия</div>
+				<div class="all-specialist__list-item">Офтальмология</div>
+				<div class="all-specialist__list-item">Реанимация и интенсивная терапия</div>
+				<div class="all-specialist__list-item">Рентгенография</div>
+				<div class="all-specialist__list-item">Репродуктология</div>
+				<div class="all-specialist__list-item">Стационар</div>
+				<div class="all-specialist__list-item">Стоматология</div>
+				<div class="all-specialist__list-item">Терапия</div>
+				<div class="all-specialist__list-item">Травматология</div>
+				<div class="all-specialist__list-item">УЗИ</div>
+				<div class="all-specialist__list-item">Хирургия</div>
+				<div class="all-specialist__list-item">Эндокринология</div>
 			</div>
-			<div class="search__item">
-				<div class="search__tag">Иванова Иванина Иваниновна</div>
-				<div class="search__type">Иванова Иванина Иваниновна</div>
-				<div class="search__text"><!-- ... государственную академию ветеринарной медицины в 2012 году. Профессиональные
-					интересы: интенсивная <span>терапия</span>, реанимация. --></div>
+		</div>
+		<div class="all-specialist__group">
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor1.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
 			</div>
-			<div class="search__item">
-				<div class="search__tag">Истории пациентов</div>
-				<div class="search__type">Осторожно: лишай!</div>
-				<div class="search__text"><!-- ... конечно же лишай можно вылечить при своевременной диагностике и грамотной
-					<span>терапии</span>. -->
-				</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Ярославская <br> Екатерина Ивановна
+		</div>
+		<div class="specialistCard__job">
+			Заведующая ветеринарным центром
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor2.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
 			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Малицкая <br /> Валерия Викторовна
+		</div>
+		<div class="specialistCard__job">
+			Главный ветеринарный врач
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor3.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Савченко <br> Екатерина Сергеевна
+		</div>
+		<div class="specialistCard__job">
+			Ветеринарный врач
+		</div>
+	</div>
+</a><a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor1.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Ярославская <br> Екатерина Ивановна
+		</div>
+		<div class="specialistCard__job">
+			Заведующая ветеринарным центром
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor2.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Малицкая <br /> Валерия Викторовна
+		</div>
+		<div class="specialistCard__job">
+			Главный ветеринарный врач
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor3.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Савченко <br> Екатерина Сергеевна
+		</div>
+		<div class="specialistCard__job">
+			Ветеринарный врач
+		</div>
+	</div>
+</a><a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor1.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Ярославская <br> Екатерина Ивановна
+		</div>
+		<div class="specialistCard__job">
+			Заведующая ветеринарным центром
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor2.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Малицкая <br /> Валерия Викторовна
+		</div>
+		<div class="specialistCard__job">
+			Главный ветеринарный врач
+		</div>
+	</div>
+</a>
+			<a href="specialist.html" class="specialistCard">
+	<div class="specialistCard__img">
+		<img src="img/specialistCardImg/doctor3.png" alt="doctor" loading="lazy">
+		<div class="specialistCard__hover">
+			<div class="specialistCard__reception">
+				Ближайшие
+				приемы
+			</div>
+			<div class="specialistCard__date">24 мая <br>
+				сутки, c 10:00</div>
+			<div class="specialistCard__date">28 мая <br>
+				12:00-18:00</div>
+		</div>
+	</div>
+	<div class="specialistCard__wrapper">
+		<div class="specialistCard__name">
+			Савченко <br> Екатерина Сергеевна
+		</div>
+		<div class="specialistCard__job">
+			Ветеринарный врач
+		</div>
+	</div>
+</a>
 		</div>
 	</div>
 </div>
@@ -184,7 +397,26 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230703192020" defer></script>
+	<div class="review-modal">
+	<div class="review-modal__wrapper">
+		<div class="review-modal__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 4L20 20M4 20L20 4" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="review-modal__title">
+			Альбина
+		</div>
+		<div class="review-modal__text">
+			Добрый день! Хотелось бы оставить отзыв о враче Малицкой Валерии! Долго искали врача и клинику для кастрации нашего шпицули крипторха! Очень сложно довериться и найти того самого врача,но увидев Валерию произошла так сказать любовь с первого взгляда))! Доверившись первым впечатлениям мы ни чуть не пожалели! Все прошло хорошо! Добрая, отзывчивая и чуткая врач
+			Добрый день! Хотелось бы оставить отзыв о враче Малицкой Валерии! Долго искали врача и клинику для кастрации нашего шпицули крипторха! Очень сложно довериться и найти того самого врача,но увидев Валерию произошла так сказать любовь с первого взгляда))! Доверившись первым впечатлениям мы ни чуть не пожалели! Все прошло хорошо! Добрая, отзывчивая и чуткая врач...
+			Добрый день! Хотелось бы оставить отзыв о враче Малицкой Валерии! Долго искали врача и клинику для кастрации нашего шпицули крипторха! Очень сложно довериться и найти того самого врача,но увидев Валерию произошла так сказать любовь с первого взгляда))! Доверившись первым впечатлениям мы ни чуть не пожалели! Все прошло хорошо! Добрая, отзывчивая и чуткая врач...
+			Добрый день! Хотелось бы оставить отзыв о враче Малицкой Валерии! Долго искали врача и клинику для кастрации нашего шпицули крипторха! Очень сложно довериться и найти того самого врача,но увидев Валерию произошла так сказать любовь с первого взгляда))! Доверившись первым впечатлениям мы ни чуть не пожалели! Все прошло хорошо! Добрая, отзывчивая и чуткая врач...
+			Добрый день! Хотелось бы оставить отзыв о враче Малицкой Валерии! Долго искали врача и клинику для кастрации нашего шпицули крипторха! Очень сложно довериться и найти того самого врача,но увидев Валерию произошла так сказать любовь с первого взгляда))! Доверившись первым впечатлениям мы ни чуть не пожалели! Все прошло хорошо! Добрая, отзывчивая и чуткая врач...
+		</div>
+	</div>
+</div>
+	<script src="js/app.min.js?_v=20230705161318" defer></script>
 </body>
 
 </html>

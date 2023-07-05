@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703192020"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230705161318"
       integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/style.min.css?_v=20230703192020">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230705161318">
    <title>Головна</title>
 </head>
 
@@ -16,13 +16,13 @@
 		<header class="header">
    <div class="header__container">
       <div class="header__body">
-         <div class="header__logo">
+         <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logo/cat.png" alt="Logo">
             <div class="header__logo-box">
                <img class="header__logo-name" src="img/logo/name.svg" alt="Name clinic">
                <img class="header__logo-text" src="img/logo/text.svg" alt="Text clinic">
             </div>
-         </div>
+         </a>
          <div class="header__searsh">
             <label for="header-search">
                <img src="img/icon-svg/search.svg" alt="Search icon">
@@ -53,26 +53,26 @@
 			<aside class="sidebar">
    <nav class="sidebar__menu">
       <ul class="sidebar__list">
-         <li><a class="sidebar__link" href="#">Наши услуги</a></li>
-         <li><a class="sidebar__link" href="#">Стоимость</a></li>
-         <li><a class="sidebar__link" href="#">Сотрудники</a></li>
-         <li><a class="sidebar__link" href="#">График работы</a></li>
+         <li><a class="sidebar__link" href="all-services.html">Наши услуги</a></li>
+         <li><a class="sidebar__link" href="cost-services.html">Стоимость</a></li>
+         <li><a class="sidebar__link" href="all-specialist.html">Сотрудники</a></li>
+         <li><a class="sidebar__link" href="timetable.html">График работы</a></li>
          <li>
             <button class="sidebar__link sidebar__arrow">О клинике</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Наша миссия</a></li>
-               <li><a class="sidebar__sub-link" href="#">Фотогалерея</a></li>
-               <li><a class="sidebar__sub-link" href="#">Отзывы</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="0">Наша миссия</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="1">Фотогалерея</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="2">Отзывы</a></li>
             </ul>
          </li>
          <li>
             <button class="sidebar__link sidebar__arrow">Полезное</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Истории пациентов</a></li>
-               <li><a class="sidebar__sub-link" href="#">Статьи</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="0">Истории пациентов</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="1">Статьи</a></li>
             </ul>
          </li>
-         <li><a class="sidebar__link" href="#">Контакты</a></li>
+         <li><a class="sidebar__link" href="contacts.html">Контакты</a></li>
       </ul>
       <div class="header__contact header__contact--sidebar">
          <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
@@ -86,7 +86,7 @@
             <h4 class="sidebar__slogan">Работаем для вас</h4>
             <p class="sidebar__text">ежедневно и круглосуточно</p>
          </div>
-         <a class="sidebar__button" href="#">Записаться на прием</a>
+         <div class="sidebar__button btn_red btn_reception">Записаться на прием</div>
       </div>
    </div>
 </aside>
@@ -211,7 +211,7 @@
 					</a>
 				</div>
 				<div class="allServices__list-item">
-					<a href="#" class="allServices__link">
+					<a href="services.html" class="allServices__link">
 						Дерматология
 					</a>
 				</div>
@@ -357,7 +357,7 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230703192020" defer></script>
+	<script src="js/app.min.js?_v=20230705161318" defer></script>
 </body>
 
 </html>

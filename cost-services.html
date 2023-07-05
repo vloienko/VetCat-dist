@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230705161318"
+      integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20230705161318">
+   <title>Стоимость услуг клиники</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+   <div class="header__container">
+      <div class="header__body">
+         <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="img/logo/cat.png" alt="Logo">
+            <div class="header__logo-box">
+               <img class="header__logo-name" src="img/logo/name.svg" alt="Name clinic">
+               <img class="header__logo-text" src="img/logo/text.svg" alt="Text clinic">
+            </div>
+         </a>
+         <div class="header__searsh">
+            <label for="header-search">
+               <img src="img/icon-svg/search.svg" alt="Search icon">
+            </label>
+            <input type="text" id="header-search" placeholder="Поиск по сайту">
+         </div>
+         <div class="menu__icon">
+            <span></span>
+         </div>
+         <div class="header__address">
+            <div class="header__box">
+               <span class="header__street">Одесса, Чкалова д. 57/5</span>
+               <span class="header__area">Приморский район</span>
+            </div>
+            <div class="header__box">
+               <span class="header__street">Одесса, Заболотного д.21/1</span>
+               <span class="header__area">Суворовский район</span>
+            </div>
+         </div>
+         <div class="header__contact">
+            <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
+            <button type="button" class="header__order-call">Заказать звонок</button>
+         </div>
+      </div>
+   </div>
+</header>
+		<div class="sidebar-container">
+			<aside class="sidebar">
+   <nav class="sidebar__menu">
+      <ul class="sidebar__list">
+         <li><a class="sidebar__link" href="all-services.html">Наши услуги</a></li>
+         <li><a class="sidebar__link" href="cost-services.html">Стоимость</a></li>
+         <li><a class="sidebar__link" href="all-specialist.html">Сотрудники</a></li>
+         <li><a class="sidebar__link" href="timetable.html">График работы</a></li>
+         <li>
+            <button class="sidebar__link sidebar__arrow">О клинике</button>
+            <ul class="sidebar__sub-list">
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="0">Наша миссия</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="1">Фотогалерея</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="2">Отзывы</a></li>
+            </ul>
+         </li>
+         <li>
+            <button class="sidebar__link sidebar__arrow">Полезное</button>
+            <ul class="sidebar__sub-list">
+               <li><a class="sidebar__sub-link" href="info.html" data-id="0">Истории пациентов</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="1">Статьи</a></li>
+            </ul>
+         </li>
+         <li><a class="sidebar__link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="header__contact header__contact--sidebar">
+         <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
+         <button type="button" class="header__order-call">Заказать звонок</button>
+      </div>
+   </nav>
+
+   <div class="sidebar__block">
+      <div class="sidebar__box">
+         <div class="sidebar__holder">
+            <h4 class="sidebar__slogan">Работаем для вас</h4>
+            <p class="sidebar__text">ежедневно и круглосуточно</p>
+         </div>
+         <div class="sidebar__button btn_red btn_reception">Записаться на прием</div>
+      </div>
+   </div>
+</aside>
+			<main class="main">
+				<section class="cost-services">
+   <div class="container">
+      <div class="path">
+         <a href="index.html" class="path__main">
+            Главная
+         </a>
+         <div class="path__arrow">
+            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M-1.5299e-07 4.5L14 4.5M14 4.5C12.4108 3.5 9.78494 1 9.78494 1M14 4.5C12.4108 5.5 9.78494 8 9.78494 8"
+                  stroke="#797C80" />
+            </svg>
+         </div>
+         <div class="path__this">
+            Стоимость
+         </div>
+      </div>
+      <div class="cost-services__body">
+         <h2 class="cost-services__title h2-title">Стоимость услуг клиники</h2>
+         <h4 class="cost-services__sub-title">
+            Для удобства все собрали цены на все услуги в одном месте. Выберите специализацию и воспользуйтесь поиском.
+         </h4>
+
+         <div class="cost-services__block mixitup-filter">
+            <div class="cost-services__tabs">
+               <button class="cost-services__button tab-btn active" type="button" data-filter=".all-services">Все услуги<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-1">Вакцинация и чипирование<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-2">Вызов врача на дом<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-3">Гастроэнтерология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-4">Гостиница для животных<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-5">Груминг<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-6">Дерматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-7">Кардиология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-8">Кастрация<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-9">Лабораторная диагностика<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-10">Нефрология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-11">Онкология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-12">Ортопедия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-13">Офтальмология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-14">Реанимация и интенсивная терапия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-15">Рентген<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-16">Репродуктология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-17">Стационар<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-18">Стоматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-19">Терапия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-20">Травматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-21">УЗИ<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-22">Хирургия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-23">Эвтаназия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-24">Эндокринология<button>
+            </div>
+            <div class="cost-services__input">
+               <div class="search__form">
+                  <input type="text" class="search__input" placeholder="Введите название услуги"></input>
+                  <div class="search__btn btn btn_green">Найти</div>
+               </div>
+            </div>
+            <div class="cost-services__filter">
+				   <div class="cost-services__box color-box mix service-1">
+   <h5 class="cost-services__naming">Вакцинация и чипирование</h5>
+   <p class="cost-services__text">Цены указаны в украинских гривнах за одну процедуру/сеанс для одного животного</p>
+   <div class="cost-services__holder">
+      <div class="cost-services__wrap">
+         <h6 class="cost-services__nomenclature">Вакцинация собак импортной вакциной</h6>
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак Puppy (Нидерланды)</span>
+               <span class="cost-services__item-price">1300</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак DHPPi+Lepto</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак DHPPi+Lepto+Rabies</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Гексадог DHPPi+Lepto+Rabies (Франция)</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Эурикан DHPPi+Lepto</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Эурикан DHPPi+Lepto+Rabies</span>
+               <span class="cost-services__item-price">1100</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вангард 5/L (США)</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вангард 5/L+Rabies</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вангард 7/L</span>
+               <span class="cost-services__item-price">580</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вангард 7/L+Rabies</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+      <div class="cost-services__wrap">
+         <h6 class="cost-services__nomenclature">Вакцинация кошек импортной вакциной</h6>
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак Tricat (Нидерланды)</span>
+               <span class="cost-services__item-price">1300</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак Tricat+Rabies</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Фелиген CRP (Франция)</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Фелиген CRP+Rabies</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Пуревакс</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Пуревакс+Rabies</span>
+               <span class="cost-services__item-price">1100</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Пуревакс с хламидиозом</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Пуревакс с хламидиозом +Rabies</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Фелоцел-4 с хламидиозом (США)</span>
+               <span class="cost-services__item-price">580</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Фелоцел-4 с хламидиозом +Rabies</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+      <div class="cost-services__wrap">
+         <h6 class="cost-services__nomenclature">Отечественная вакцина (Украина)</h6>
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Мультифел-4 (для кошек)</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Мультифел-4 + Rabies</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Мультикан-8 (для собак)</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Мультикан-8 (с бешенством)</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+      <div class="cost-services__wrap">
+         <h6 class="cost-services__nomenclature">Вакцинация кроликов (миксоматоз + ВГБК)</h6>
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Ассоциированная вакцина (отечественная) —  1 раз в 6 месяцев</span>
+               <span class="cost-services__item-price">580</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Нобивак (импортная) —  1 раз в год</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+      <div class="cost-services__wrap">
+         <h6 class="cost-services__nomenclature">Вакцинация против дерматофитии</h6>
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вакдерм</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Вакдерм F</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Микродерм</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+         </ul>
+      </div>
+      <div class="cost-services__wrap">
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Пиродог от пироплазмоза для собак</span>
+               <span class="cost-services__item-price">1100</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Импортная вакцина против бешенства</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Глобкан-5 (пассивная иммунизация собак)</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Глобфел-4 (пассивная иммунизация кошек)</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Паспорт для собак, кошек</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Паспорт для кроликов</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Чипирование (с учетом чипа)+ выдача свидетельства + занесение в единую базу данных Animal-ID</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Внесение данных в единую базу Animal-ID (без чипирования)</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+				   <div class="cost-services__box color-box mix service-6">
+   <h5 class="cost-services__naming">Дерматология</h5>
+   <p class="cost-services__text">Цены указаны в украинских гривнах за одну процедуру/сеанс для одного животного</p>
+   <div class="cost-services__holder">
+      <div class="cost-services__wrap">
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Первичный прием дерматолога (осмотр, постановка предварительного диагноза, назначение лечения)</span>
+               <span class="cost-services__item-price">1300</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Повторный прием дерматолога</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Консультация дерматолога по результатам исследований</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Отоскопия на оба уха</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Посев на дерматофиты</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Трихоскопия</span>
+               <span class="cost-services__item-price">1100</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитологическое исследование из НСП</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитологическое исследование мазка-отпечатка с кожи</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Исследование на эктопаразиты и дерматофиты </span>
+               <span class="cost-services__item-price">580</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитоскрининг</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+				   <div class="cost-services__box color-box mix service-14">
+   <h5 class="cost-services__naming">Реанимация и интенсивная терапия</h5>
+   <p class="cost-services__text">Цены указаны в украинских гривнах за одну процедуру/сеанс для одного животного</p>
+   <div class="cost-services__holder">
+      <div class="cost-services__wrap">
+         <ul class="cost-services__list">
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Первичный прием дерматолога (осмотр, постановка предварительного диагноза, назначение лечения)</span>
+               <span class="cost-services__item-price">1300</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Повторный прием дерматолога</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Консультация дерматолога по результатам исследований</span>
+               <span class="cost-services__item-price">800</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Отоскопия на оба уха</span>
+               <span class="cost-services__item-price">680</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Посев на дерматофиты</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Трихоскопия</span>
+               <span class="cost-services__item-price">1100</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитологическое исследование из НСП</span>
+               <span class="cost-services__item-price">900</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитологическое исследование мазка-отпечатка с кожи</span>
+               <span class="cost-services__item-price">550</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Исследование на эктопаразиты и дерматофиты </span>
+               <span class="cost-services__item-price">580</span>
+            </li>
+            <li class="cost-services__item">
+               <span class="cost-services__item-name">Цитоскрининг</span>
+               <span class="cost-services__item-price">400</span>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+
+				<footer class="footer">
+   <div class="container">
+      <div class="footer__body">
+         <div class="footer__info">
+            <div class="footer__social">
+               <h2 class="footer__title">
+                  Подпишитесь, чтобы быть в курсе всех акций и новостей
+               </h2>
+               <div class="footer__link">
+                  <img src="img/icon-svg/insta.svg" alt="instagram" class="footer__img" loading="lazy"/>
+                  <a href="#" class="footer__instagram">vetket.clinic</a>
+               </div>
+            </div>
+            <div class="footer__text">
+               Обращаем Ваше внимание на то, что данный интернет-сайт носит
+               исключительно информационный характер и не является публичной офертой,
+               определяемой положениями ч.2 ст.37 Гражданского кодекса Украины. Для
+               получения подробной информации о стоимости и сроках выполнения услуг,
+               пожалуйста, обращайтесь к сотрудникам ветеринарного центра «ВетКэт».
+            </div>
+         </div>
+         <div class="footer__copyright">
+            <div class="footer__copyright-left">
+               <p class="footer__copyright-text">© Ветеринарный центр «ВетКэт». Все права защищены. 2020</p>
+            </div>
+            <div class="footer__copyright-right">
+               <a href="#" class="footer__copyright-politic">Политика конфиденциальности</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+			</main>
+		</div>
+	</div>
+	<div class="popUp-reception">
+	<div class="popUp-reception__wrapper">
+		<div class="popUp-reception__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 4L20 20M4 20L20 4" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="popUp-reception__title">
+			Запись на прием
+		</div>
+		<form>
+			<div class="input-wrapper__name">
+				<label for="nameRec">Имя и фамилия</label>
+				<input type="text" name="name" id="nameRec" required>
+			</div>
+			<div class="input-wrapper__tel">
+				<label for="phone">Телефон</label>
+				<input type="tel" name="phone" id="phone" required>
+			</div>
+			<div class="input-wrapper__toggle">
+				<label>Филиал центра</label>
+				<div class="toggle popUp-reception__toggle">
+					<div class="toggle__item toggle__item_active">Строгино</div>
+					<div class="toggle__item">Донской</div>
+				</div>
+			</div>
+			<div class="input-wrapper__date">
+				<label for="date">Дата приема</label>
+				<input type="date" name="date" id="date" required min="2023-07-01">
+			</div>
+			<div class="input-wrapper__pets">
+				<label for="pets">Кто ваш питомец?</label>
+				<div class="label_absolute">например, кот Кокос</div>
+				<input type="text" name="pets" id="pets" required>
+			</div>
+			<div class="input-wrapper__text">
+				<label for="text">Сообщение <span>(необязательно)</span></label>
+				<div class="subtext">
+					Можете описать проблему вашего питомца или указать
+					специалиста, к которому хотите попасть на прием
+				</div>
+				<textarea name="text" id="text" ></textarea>
+			</div>
+			<div class="input-wrapper__terms">
+				<div class="terms">
+					<label class="terms__check">
+						<input type="checkbox" name="terms" id="terms" required>
+						<span class="terms__checkmark"></span>
+					</label>
+					<div class="terms__terms">
+						Я согласен с <a href="#"> условиями обработки
+							персональных данных</a>
+					</div>
+				</div>
+				<button class="btn btn_green popUp-reception__btn">
+					Записаться
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+	<script src="js/app.min.js?_v=20230705161318" defer></script>
+</body>
+
+</html>

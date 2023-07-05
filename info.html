@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230703192020"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css?_v=20230705161318"
       integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/style.min.css?_v=20230703192020">
+   <link rel="stylesheet" href="css/style.min.css?_v=20230705161318">
    <title>Головна</title>
 </head>
 
@@ -16,13 +16,13 @@
 		<header class="header">
    <div class="header__container">
       <div class="header__body">
-         <div class="header__logo">
+         <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logo/cat.png" alt="Logo">
             <div class="header__logo-box">
                <img class="header__logo-name" src="img/logo/name.svg" alt="Name clinic">
                <img class="header__logo-text" src="img/logo/text.svg" alt="Text clinic">
             </div>
-         </div>
+         </a>
          <div class="header__searsh">
             <label for="header-search">
                <img src="img/icon-svg/search.svg" alt="Search icon">
@@ -53,26 +53,26 @@
 			<aside class="sidebar">
    <nav class="sidebar__menu">
       <ul class="sidebar__list">
-         <li><a class="sidebar__link" href="#">Наши услуги</a></li>
-         <li><a class="sidebar__link" href="#">Стоимость</a></li>
-         <li><a class="sidebar__link" href="#">Сотрудники</a></li>
-         <li><a class="sidebar__link" href="#">График работы</a></li>
+         <li><a class="sidebar__link" href="all-services.html">Наши услуги</a></li>
+         <li><a class="sidebar__link" href="cost-services.html">Стоимость</a></li>
+         <li><a class="sidebar__link" href="all-specialist.html">Сотрудники</a></li>
+         <li><a class="sidebar__link" href="timetable.html">График работы</a></li>
          <li>
             <button class="sidebar__link sidebar__arrow">О клинике</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Наша миссия</a></li>
-               <li><a class="sidebar__sub-link" href="#">Фотогалерея</a></li>
-               <li><a class="sidebar__sub-link" href="#">Отзывы</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="0">Наша миссия</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="1">Фотогалерея</a></li>
+               <li><a class="sidebar__sub-link" href="about-us.html" data-id="2">Отзывы</a></li>
             </ul>
          </li>
          <li>
             <button class="sidebar__link sidebar__arrow">Полезное</button>
             <ul class="sidebar__sub-list">
-               <li><a class="sidebar__sub-link" href="#">Истории пациентов</a></li>
-               <li><a class="sidebar__sub-link" href="#">Статьи</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="0">Истории пациентов</a></li>
+               <li><a class="sidebar__sub-link" href="info.html" data-id="1">Статьи</a></li>
             </ul>
          </li>
-         <li><a class="sidebar__link" href="#">Контакты</a></li>
+         <li><a class="sidebar__link" href="contacts.html">Контакты</a></li>
       </ul>
       <div class="header__contact header__contact--sidebar">
          <a class="header__tel" href="tel:+380971102303">+38 (097) 110-23-03</a>
@@ -86,7 +86,7 @@
             <h4 class="sidebar__slogan">Работаем для вас</h4>
             <p class="sidebar__text">ежедневно и круглосуточно</p>
          </div>
-         <a class="sidebar__button" href="#">Записаться на прием</a>
+         <div class="sidebar__button btn_red btn_reception">Записаться на прием</div>
       </div>
    </div>
 </aside>
@@ -160,7 +160,68 @@
 			</main>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230703192020" defer></script>
+	<div class="popUp-reception">
+	<div class="popUp-reception__wrapper">
+		<div class="popUp-reception__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 4L20 20M4 20L20 4" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="popUp-reception__title">
+			Запись на прием
+		</div>
+		<form>
+			<div class="input-wrapper__name">
+				<label for="nameRec">Имя и фамилия</label>
+				<input type="text" name="name" id="nameRec" required>
+			</div>
+			<div class="input-wrapper__tel">
+				<label for="phone">Телефон</label>
+				<input type="tel" name="phone" id="phone" required>
+			</div>
+			<div class="input-wrapper__toggle">
+				<label>Филиал центра</label>
+				<div class="toggle popUp-reception__toggle">
+					<div class="toggle__item toggle__item_active">Строгино</div>
+					<div class="toggle__item">Донской</div>
+				</div>
+			</div>
+			<div class="input-wrapper__date">
+				<label for="date">Дата приема</label>
+				<input type="date" name="date" id="date" required min="2023-07-01">
+			</div>
+			<div class="input-wrapper__pets">
+				<label for="pets">Кто ваш питомец?</label>
+				<div class="label_absolute">например, кот Кокос</div>
+				<input type="text" name="pets" id="pets" required>
+			</div>
+			<div class="input-wrapper__text">
+				<label for="text">Сообщение <span>(необязательно)</span></label>
+				<div class="subtext">
+					Можете описать проблему вашего питомца или указать
+					специалиста, к которому хотите попасть на прием
+				</div>
+				<textarea name="text" id="text" ></textarea>
+			</div>
+			<div class="input-wrapper__terms">
+				<div class="terms">
+					<label class="terms__check">
+						<input type="checkbox" name="terms" id="terms" required>
+						<span class="terms__checkmark"></span>
+					</label>
+					<div class="terms__terms">
+						Я согласен с <a href="#"> условиями обработки
+							персональных данных</a>
+					</div>
+				</div>
+				<button class="btn btn_green popUp-reception__btn">
+					Записаться
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
+	<script src="js/app.min.js?_v=20230705161318" defer></script>
 </body>
 
 </html>
