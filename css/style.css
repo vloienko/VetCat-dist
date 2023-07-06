@@ -5281,11 +5281,6 @@ body {
   color: #292d33;
 }
 
-.main {
-  height: auto !important;
-  overflow-y: visible !important;
-}
-
 @media (min-width: 992px) {
   .footer__copyright-politic:hover {
     text-decoration: underline;
