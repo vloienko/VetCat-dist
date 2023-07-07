@@ -4773,7 +4773,7 @@ body {
 
 .popUp-feedback_show {
   opacity: 1;
-  z-index: 20;
+  z-index: 200;
 }
 
 .popUp-feedback__wrapper {
@@ -5058,7 +5058,7 @@ body {
 
 .popUp-reception_show {
   opacity: 1;
-  z-index: 20;
+  z-index: 200;
 }
 
 .popUp-reception__wrapper {
@@ -6263,6 +6263,10 @@ body {
     height: -moz-max-content;
     height: max-content;
     padding: 0px 18px 50px 18px;
+  }
+
+  .historyCard__img img {
+    width: 100%;
   }
 
   .card {
