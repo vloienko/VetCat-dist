@@ -3484,9 +3484,9 @@ body {
 .contacts__title {
   margin-top: 6px;
   font-size: 48px;
+  line-height: 56px;
   font-family: "Manrope";
   font-weight: 700;
-  line-height: 56px;
   color: #292d33;
 }
 
@@ -3838,7 +3838,7 @@ body {
 
 .about-us .gallery-modal_show {
   opacity: 1;
-  z-index: 20;
+  z-index: 100;
 }
 
 .about-us .gallery-modal__close {
@@ -3878,6 +3878,7 @@ body {
 .about-us .gallery-modal__slider {
   margin: 0 auto;
   margin-top: 82px;
+  position: relative;
 }
 
 .about-us .gallery-modal__swiper {
@@ -3939,6 +3940,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 5px;
 }
 
 .about-us .gallery-modal__thumbs-wrapper {
@@ -5571,6 +5573,10 @@ body {
     font-size: calc(32px + 16 * ((100vw - 320px) / 1300));
   }
 
+  .contacts__title {
+    line-height: calc(42px + 14 * ((100vw - 320px) / 1300));
+  }
+
   .contacts .delivery {
     margin-top: calc(50px + 110 * ((100vw - 320px) / 1300));
   }
@@ -6913,6 +6919,10 @@ body {
   .services .specialist__slide {
     width: 290px;
   }
+
+  .contacts__tel {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -6927,7 +6937,7 @@ body {
 
 @media (max-height: 927px) {
   .about-us .gallery-modal__swiper {
-    width: 60%;
+    width: 40%;
   }
 }
 
